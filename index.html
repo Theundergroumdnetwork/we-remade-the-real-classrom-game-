@@ -10,7 +10,7 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
-            background: #111; /* matches the site's dark background */
+            background: #111;
         }
         iframe {
             width: 100%;
@@ -24,6 +24,10 @@
     <!-- This is the REAL site loaded 100% perfectly inside the page -->
     <!-- Looks and works EXACTLY like https://duck.tinyexams.com -->
     <!-- No white screen, no missing content, full interactivity -->
-    <iframe src="https://classroomgame.github.io/" allowfullscreen></iframe>
+    <iframe 
+        src="https://classroomgame.github.io/" 
+        allowfullscreen
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals">
+    </iframe>
 </body>
 </html>
